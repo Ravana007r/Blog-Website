@@ -4,8 +4,8 @@
 <p><%= homeContent %></p>
 
 <% postedMessage.forEach(function(post){ %>
-    <h1><%=post.titles %></h1>
-<p><%= post.postBody.substring(0,100) + "..."%> <a href="/<%=post.titles%>">Read more</a></p>
+    <h1><%=post.title %></h1>
+<p><%= post.comment.substring(0,100) + "..."%> <a href="/<%=post._id%>">Read more</a></p>
     
 <% }) %>
 
